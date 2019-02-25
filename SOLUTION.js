@@ -155,5 +155,153 @@ function check_neg_pos(){
         document.getElementById("neg_pos").innerHTML = "when input is not currect";
     }
 }
+// solution 31
+function biggervalue(){
+    var value1=document.getElementById("text9").value;
+    var value2=document.getElementById("text10").value;
+    var value3=document.getElementById("text11").value;
+    var max;
+    if(value1>value2){
+     max= value1;
+    }
+    else{
+       max= value2;
+    }
+    if(value3>max){
+        max=value3;
 
+    }
+document.getElementById("result9").innerHTML=max;
+}
+
+//solution 32
+function nearest100(){
+    var a=document.getElementById("text12").value;
+    var b=document.getElementById("text13").value;
+var a1=Math.abs(100-a);
+var b1=Math.abs(100-b);
+    if(a1<b1){
+        document.getElementById("result10").innerHTML=" First number is nearest to 100";
+    }
+    else{
+        document.getElementById("result10").innerHTML="Second number is nearest to 100";
+    }
+   
+}
+//solution 33
+
+function innervalue(){
+    var a=document.getElementById("text14").value;
+    var b=document.getElementById("text15").value;
+var inner;
+    if((a>=40 && a<=60 && b>=40 && b<=60)
+    ||
+    (a>=70 && a<=100 && b>=70 && b<=100)){
+        inner="This values are currect ";
+    }
+    else{
+        inner=" This values are not currect";
+    }
+   document.getElementById("result11").innerHTML=inner;
+}
+
+//solution 34
+
+function innerbigger(){
+    var a=document.getElementById("text16").value;
+    var b=document.getElementById("text17").value;
+    if(a>=40 && a<=60 && b>=40 && b<=60){
+        var max;
+        if(a>b){
+            max=a;
+        }else{
+            max=b;
+        }
+        document.getElementById("result12").innerHTML=max;    }
+    else{
+        document.getElementById("result12").innerHTML=" This values are not currect";
+    }
+   
+}
+//solution 37
+function uppertolower(){
+    var str=document.getElementById("text18").value;
+    if(str.length <= 3){
+document.getElementById("result13").innerHTML=str.toUpperCase();
+    }
+    front_part = (str.substring(0, 3)).toLowerCase();
+    back_part = str.substring(3, str.length);  
+    document.getElementById("result13").innerHTML= front_part + back_part;
+}
+//solution 38
+
+function greating(){
+    var num=document.getElementById("text19").value;
+    var result;
+    if(num>=89 && num<=100){
+result="True";
+    }
+   else{
+result="False";
+   }
+    document.getElementById("result14").innerHTML= result;
+}
+// solution 39
+function sum10(){
+    var x=parseInt(document.getElementById("text20").value);
+    var y=parseInt(document.getElementById("text21").value);
+    var xy=x+y;
+    var result;
+    if(xy>50 && xy<80){
+result="The sum is around 65";
+    }else{
+        result="Thr sum is around 80";
+    }
+    document.getElementById("result15").innerHTML=result;
+}
+//solution 40
+function check_from_two(){
+    var x=parseInt(document.getElementById("text22").value);
+    var y=parseInt(document.getElementById("text23").value);
+     var sum=x+y;
+     var difference=x-y;
+//      var result;
+     if((x==8) || (y==8) ||(sum==8)||(difference==8)){
+     var result="The input is true";
+     }else{
+      var   result="The input is False";
+     }
+document.getElementById("result16").innerHTML=result;
+}
+//solution 41
+function samenumber(){
+    var a=parseInt(document.getElementById("text24").value);
+    var b=parseInt(document.getElementById("text25").value);
+    var c=parseInt(document.getElementById("text26").value);
+    var result;
+    if((a==b)&&(b==c)){
+result="The number is 30";
+    }
+  else if((a==b)||(b==c)||(a==c)){
+result="the number is 20";
+    }
+    else{
+result="the number is 40";
+    }
+document.getElementById("result17").innerHTML=result;
+}
+//solution 43
+function samelast_digit(){
+    var p=parseInt(document.getElementById("text27").value);
+    var q=parseInt(document.getElementById("text28").value);
+    var r=parseInt(document.getElementById("text29").value);
+   var result;
+if( (p % 10 === q % 10)|| (p % 10===r % 10)||(q %10 ===r%10)){
+result="True";
+}else{
+    result="false";
+}
+document.getElementById("result18").innerHTML=result;
+
+}
 
