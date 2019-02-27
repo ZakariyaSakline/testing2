@@ -305,3 +305,21 @@ document.getElementById("result18").innerHTML=result;
 
 }
 
+//solution 53
+function checka_b(){
+    var a=document.getElementById("text40").value;
+var result=((/a...b/).test(a)) ||((/b...a/).test(a));
+document.getElementById("result30").innerHTML=result;
+
+}
+//solution 54
+function vowel_count(){
+    var a=document.getElementById("text41").value;
+ var result=a.replace(/[^aeiou]/g, "").length;
+ document.getElementById("result31").innerHTML=result;
+
+}
+
+
+
+
