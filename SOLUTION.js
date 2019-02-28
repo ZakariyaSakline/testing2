@@ -319,6 +319,86 @@ function vowel_count(){
  document.getElementById("result31").innerHTML=result;
 
 }
+//solution 60
+function cutting(){
+    var a=document.getElementById("text47").value;
+  var result=a.substring(1,a.length -1);
+  document.getElementById("result37").innerHTML=result;
+ 
+}
+//solution 61
+function twoconcat(){
+    var a=document.getElementById("text48").value;
+    var b=document.getElementById("text49").value;
+var x=a.substring(1);
+var y=b.substring(1);
+var z=x + y;
+document.getElementById("result38").innerHTML=z;
+
+}
+//solution 62
+function addthree(){
+    var a=document.getElementById("text50").value;
+   var b="minhaj";
+   var x=b.substring(b.length -3);
+   var result=x + a;
+   document.getElementById("result40").innerHTML=result;
+ 
+}
+//solution 63
+function midd_cha(){
+    var a=document.getElementById("text51").value;
+  if(a.length % 2!==0){
+      var x=(a.length +1)/2;
+      var result=a.slice(x-2 , x+1);
+
+  }else{
+      var result="undifine input";
+  }
+
+  document.getElementById("result41").innerHTML=result;
+
+}
+//solution 64
+function compair(){
+    var a=document.getElementById("text52").value;
+    var b=document.getElementById("text53").value;
+var x=Math.min(a.length,b.length);
+var result=a.substring(a.length-x) + b.substring(b.length-x);
+document.getElementById("result43").innerHTML=result;
+
+}
+
+//solution 65
+function  end_with_Script(){
+    var a=document.getElementById("text54").value;
+var l=a.length;
+var result;
+if(a.substring(l-6 , l)=="script"){
+result="True";
+}else{
+    result="False";
+}
+document.getElementById("result44").innerHTML=result;
+
+}
+
+//solution 66
+function display_city_name(){
+    var result;
+    var a=document.getElementById("text55").value;
+  if((a.length>=3)&&((a.substring(0,3)=="Ban")||(a.substring(0,3)=="New"))){
+result=a;
+  }else{
+      result="Wrong input";
+  }
+  document.getElementById("result45").innerHTML=result;
+
+}
+
+
+
+
 
 
 
