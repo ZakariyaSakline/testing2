@@ -396,6 +396,145 @@ result=a;
 
 }
 
+//solution 81
+function add_digits(){
+    var a=document.getElementById("text70").value;
+   var result=(a % 10)+Math.floor(a/ 10);
+   document.getElementById("result60").innerHTML=result;
+
+}
+//solution 82
+function add_two_int(){
+    var a=document.getElementById("text71").value;
+    var b=document.getElementById("text72").value;
+  
+}
+
+//solution 83
+
+
+function array(){
+var arr = ['first item', 'second item is longer than the third one', 
+           'third longish item'];
+var lgth = 0;
+var i=0;
+
+for(i=0; i < arr.length; i++){
+    if(arr[i].length > lgth){
+        var lgth = arr[i].length;
+      var  result = arr[i];
+    }      
+} 
+
+document.getElementById("result62").innerHTML=result;
+}
+
+//solution 85
+
+function sum_two_array(){
+    var arr=[1,2,3,4,5,6];
+    var even_arr=[];
+    var odd_arr=[];
+    var i;
+    for(i=0; i<arr.length;i++){
+        if(i % 2===0){
+            even_arr.push(arr[i]);
+        }else{
+            odd_arr.push(arr[i]);
+        }
+    }
+var sum_even=even_arr.reduce((a,b)=>a+b,0);
+var sum_odd=odd_arr.reduce((x,y)=>x+y,0);
+var push_sum=[];
+push_sum.push(sum_even);
+push_sum.push(sum_odd);
+    document.getElementById("result63").innerHTML=push_sum;
+
+}
+//solution 86
+function Types_of_angles(){
+    var a=document.getElementById("text76").value;
+
+    var result;
+    if(a<90){
+result="This is Acute angle";
+    }
+    else if(a==90){
+result=" This is Right angle";
+    }
+    else if(a<180 && a>90){
+        result="This is Obtuse angle";
+
+    }
+    else if(a==180){
+result=" This is Straight angle";
+    }
+    else{
+        result="This is not in range";
+    }
+    document.getElementById("result66").innerHTML=result;
+
+}
+//solusion 88
+function  Check_whether(){
+    var a=[20,15,5];
+    var result;
+    var x=a[0];
+    var y=a[1];
+    var z=a[2];
+    if((x % z==0)&&(y % z==0)){
+result="Input is True";
+    }else{
+        result="Input is False";
+    }
+
+    document.getElementById("result68").innerHTML=result;
+}
+
+//solusion 89
+function can_replace(){
+    var a=document.getElementById("text77").value;
+    var b=document.getElementById("text78").value;
+    var c=document.getElementById("text79").value;
+ var result;
+ if((a+b==c)||(a-b==c)||(a*b==c)||(a/b==c)){
+result="Input is True";
+ }else{
+     result="Input is False";
+ }
+ document.getElementById("result69").innerHTML=result;
+
+}
+/// solusion 90
+function greatest_3rd_element(){
+    var a=[54,6,57,25,47,63];
+    
+        a.sort(function(x,y){
+            return y-x;
+        })
+
+        
+        document.getElementById("result70").innerHTML=a[2];
+ 
+    }
+
+/// solusion 93
+function max_min_difference(){
+    var a=[54,6,57,25,47,63];
+    var max=Math.max(...a)
+       var min=Math.min(...a);
+       var difference=max -min;
+        
+        document.getElementById("result73").innerHTML=difference;
+ 
+    }
+
+
+
+
+
+
+
 
 
 
